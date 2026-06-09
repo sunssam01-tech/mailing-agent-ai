@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI 챗봇 데모</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <header class="app-header">
+        <div class="title-area">
+          <h1>메일링 에이전트 AI</h1>
+          <p class="subtitle">요청을 정리해서 메일로 보낼 수 있게 도와주는 챗봇이에요</p>
+        </div>
+        <div class="header-actions">
+          <button id="google-login-btn" class="secondary-btn" type="button">구글 로그인</button>
+          <button id="reset-btn" class="secondary-btn" type="button">새 대화</button>
+          <button id="stop-btn" class="secondary-btn" type="button">비상 정지</button>
+          <button id="send-email-btn" class="primary-btn" type="button">메일 보내기</button>
+        </div>
+      </header>
+
+      <main class="chat-layout">
+        <section class="chat-panel" aria-label="채팅 영역">
+          <div id="chat-history" class="chat-history" aria-live="polite"></div>
+
+          <!-- 메일 미리보기 카드: sendMail 실행 전 확인용 -->
+          <section
+            id="preview-card"
+            class="preview-card hidden"
+            aria-label="메일 미리보기"
+          >
+            <h2 class="preview-title">메일 미리보기</h2>
+            <div class="preview-content">
+              <div class="preview-row">
+                <span class="preview-label">받는 사람</span>
+                <span id="preview-recipient" class="preview-value"></span>
+              </div>
+              <div class="preview-row">
+                <span class="preview-label">제목</span>
+                <span id="preview-subject" class="preview-value"></span>
+              </div>
+              <div class="preview-row preview-body-row">
+                <span class="preview-label">내용</span>
+                <pre id="preview-body" class="preview-body"></pre>
+              </div>
+            </div>
+            <div class="preview-actions">
+              <button id="preview-confirm" class="primary-btn" type="button">
+                확인
+              </button>
+              <button
+                id="preview-cancel"
+                class="secondary-btn"
+                type="button"
+              >
+                취소
+              </button>
+            </div>
+          </section>
+
+          <form id="chat-form" class="chat-input-area">
+            <label for="user-input" class="visually-hidden">메시지 입력</label>
+            <textarea
+              id="user-input"
+              class="chat-input"
+              rows="2"
+              placeholder="메시지를 입력하고 Enter를 누르면 전송돼요 (Shift+Enter = 줄바꿈)"
+            ></textarea>
+            <button id="send-btn" class="primary-btn" type="submit">전송</button>
+          </form>
+          <p id="status-text" class="status-text"></p>
+        </section>
+
+        <aside class="info-panel" aria-label="에이전트 TAO 로그">
+          <h2>에이전트 TAO 로그</h2>
+          <p class="notice-text">
+            에이전트가 어떤 도구(askUser / composeEmail / sendEmail)를 쓰고,
+            어떤 생각(Thought)과 결과(Observation)를 남겼는지 기록돼요.
+          </p>
+          <div id="tao-log" class="tao-log"></div>
+          <div id="send-result" class="send-result"></div>
+        </aside>
+      </main>
+    </div>
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="config.js"></script>
+    <script src="tools.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
+
