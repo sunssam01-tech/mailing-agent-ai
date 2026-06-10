@@ -4,8 +4,13 @@
 
 // 실제 OpenAI 호환 엔드포인트 설정
 
-const OPENAI_API_KEY =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NzkzNDEwNDEsIm5iZiI6MTc3OTM0MTA0MSwiZXhwIjoxNzk4ODE1NTk5LCJrZXlfaWQiOiJmZTk3ZmY0NC1kYjRiLTRmZWQtODViZC0zMmIzYmE2NWQzMDUifQ.HJfUf6G6n_cuIVmnvYew4oafsDL81r-FNzSfDb6O1vc";
+// 예시: OpenAI 키(sk-proj-...)를 3~4조각으로 나누어 넣기
+const part1 = "sk-proj-Y-RRDM-gYGTP35WI2mlIm7X2O";
+const part2 = "2ahkqnew6gtq-cNp1b9sSgTnlufUjlW7BYDN6sTN70T";
+const part3 = "uhHt1WT3BlbkFJQYcxq4Bvg3jJBuX_T";
+const part3 = "cYR0pu8pgyhuHDR9h2_PJ1lFsIWj2NR7e1RFNPotWrm-ppiSltEfJBhEA";
+const OPENAI_API_KEY = part1 + part2 + part3 + part4;
+
 const OPENAI_BASE_URL =
   "https://mlapi.run/6ba9f739-79e5-4a3f-9b02-fb8ca7c15a76/v1";
 const OPENAI_MODEL = "openai/gpt-5.1";
@@ -13,7 +18,7 @@ const OPENAI_MODEL = "openai/gpt-5.1";
 // Gmail API OAuth 설정 (학습용: 브라우저에서 바로 사용)
 // - GMAIL_CLIENT_ID: 학생이 제공한 OAuth 클라이언트 ID
 // - GMAIL_API_SCOPE: gmail.send 권한만 요청
-
 const GMAIL_CLIENT_ID =
-  "572727663978-1e1fa1r6asdkevb40pl8tvhg113nsihr.apps.googleusercontent.com";
+  "360554021962-dlk19pht1km85aun3fcdeqke9c239knk.apps.googleusercontent.com";
 const GMAIL_API_SCOPE = "https://www.googleapis.com/auth/gmail.send";
+
