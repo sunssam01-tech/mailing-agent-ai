@@ -421,7 +421,7 @@ function runAskUser(nextField) {
 
   if (nextField === "recipient") {
     question =
-      "이 메일을 보낼 친구의 메일 주소를 써 주세요. (다음 중 하나만 사용할 수 있어요: yangsy20813@gmail.com,yangsy20813@gmail.com,windows108888@gmail.com,hanjiseo20629@gmail.com,blue270917@gmail.com,mangoful0531@gmail.com,son0yul6@gmail.com,rlaxodb001@gmail.com,jjjch825@gmail.com,speedgojiho@gmail.com)";
+      "이 메일을 보낼 친구의 메일 주소를 써 주세요. (다음 중 하나만 사용할 수 있어요. 등록된 메일로만 보낼수 있어요.)";
     thought =
       "수신자 이메일이 친구 메일 화이트리스트에 있는지 알아야 발송 가능 여부를 판단할 수 있다.";
   } else if (nextField === "subject") {
