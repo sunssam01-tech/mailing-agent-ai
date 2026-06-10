@@ -32,9 +32,16 @@ let gmailAccessToken = null;
 
 // 친구 메일 주소 화이트리스트
 const FRIEND_EMAIL_WHITELIST = [
-  "grayegg@gmail.com",
-  "blackegg@daum.net",
-  "sunny.icmhs@gmail.com",
+  "yangsy20813@gmail.com",
+  "yangsy20813@gmail.com",
+  "windows108888@gmail.com",
+  "hanjiseo20629@gmail.com", 
+  "blue270917@gmail.com",
+  "mangoful0531@gmail.com",
+  "son0yul6@gmail.com",
+  "rlaxodb001@gmail.com",
+  "jjjch825@gmail.com",
+  "speedgojiho@gmail.com",
 ];
 
 // =============================

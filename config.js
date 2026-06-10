@@ -5,10 +5,10 @@
 // 실제 OpenAI 호환 엔드포인트 설정
 
 // 예시: OpenAI 키(sk-proj-...)를 3~4조각으로 나누어 넣기
-const part1 = "sk-proj-Y-RRDM-gYGTP35WI2mlIm7X2O";
-const part2 = "2ahkqnew6gtq-cNp1b9sSgTnlufUjlW7BYDN6sTN70T";
-const part3 = "uhHt1WT3BlbkFJQYcxq4Bvg3jJBuX_T";
-const part3 = "cYR0pu8pgyhuHDR9h2_PJ1lFsIWj2NR7e1RFNPotWrm-ppiSltEfJBhEAabc";
+const part1 = "sk-proj-AhLKVY7BjIgLBL7M1kZK1-gnLXrvVO7ANORMbAZiiz-";
+const part2 = "Of3pyqJbSVXtiZtEez_pwSjoohWU2UYT3BlbkFJXQON1";
+const part3 = "Pc0Tv6ih4T0B4QORlkp2E5YW7k5Xo0fhpcp9";
+const part3 = "NJcgIbq7_a1tmir7BTkKf1PBdwNIYwVgA";
 const OPENAI_API_KEY = part1 + part2 + part3 + part4;
 
 const OPENAI_BASE_URL =
