@@ -8,7 +8,7 @@
 const part1 = "sk-proj-Y-RRDM-gYGTP35WI2mlIm7X2O";
 const part2 = "2ahkqnew6gtq-cNp1b9sSgTnlufUjlW7BYDN6sTN70T";
 const part3 = "uhHt1WT3BlbkFJQYcxq4Bvg3jJBuX_T";
-const part3 = "cYR0pu8pgyhuHDR9h2_PJ1lFsIWj2NR7e1RFNPotWrm-ppiSltEfJBhEA";
+const part3 = "cYR0pu8pgyhuHDR9h2_PJ1lFsIWj2NR7e1RFNPotWrm-ppiSltEfJBhEAabc";
 const OPENAI_API_KEY = part1 + part2 + part3 + part4;
 
 const OPENAI_BASE_URL =
